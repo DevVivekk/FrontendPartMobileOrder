@@ -1,0 +1,38 @@
+.home-div{
+    width: 100%;
+    min-width: 50rem;
+}
+.header-div{
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-div{
+    width: 40rem;
+    height: 5rem;
+    border: 2px solid black; 
+    border-radius: 5px;
+  }
+.header-svg{
+    position: relative;
+}
+.header-cart-no{
+    position: absolute;
+    color: white;
+    left: 2rem;
+    top: -2.6rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: aqua;
+}
+.home-books{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
