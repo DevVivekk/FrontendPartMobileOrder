@@ -3,7 +3,7 @@ import axios from "axios";
 export const getBookData = createAsyncThunk("getBookData", async ({item,page}) => {
   try {
       const { data } = await axios.get(
-        `https://caridea-hoodie.cyclic.app/server/api/getphones?phone_name=${item}&page=${page}`
+        `https://lazy-ruby-fawn-garb.cyclic.app/server/api/getphones?phone_name=${item}&page=${page}`
       );
       return data;
   } catch (err) {
