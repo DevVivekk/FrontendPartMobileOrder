@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 export const orderProducts = createAsyncThunk("orderProducts", async (item) => {
   try {
-    const response = await axios.post("https://mybackedserver.onrender.com/server/api/phoneorder",item);
+    const response = await axios.post("https://caridea-hoodie.cyclic.app/server/api/phoneorder",item);
     if(response.status===201){
       alert("Sent successfully!")
     }

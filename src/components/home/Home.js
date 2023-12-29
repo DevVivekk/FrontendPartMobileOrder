@@ -9,8 +9,9 @@ const Home = () => {
     const [count,setCount] = useState(2);
     useEffect(() => {
         dispatch(getBookData({item:"",page:count}));
-    }, [dispatch,count]);
-    const loadmoredata = async()=>{
+    }, [count,dispatch]);
+    const loadmoredata = async(e)=>{
+        e.preventDefault();
         setCount((prev)=>{
             return prev+1;
         });
